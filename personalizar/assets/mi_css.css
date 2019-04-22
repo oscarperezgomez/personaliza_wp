@@ -10,3 +10,7 @@ y añadimos nuestro logo
 	background-size: 50px; background-repeat: no-repeat; padding-left:50px;
 	background-position: 2px bottom;
 }
+
+/* Cambiar el ancho del editor Gutenberg */
+/* Main column width */
+.wp-block { max-width: 95%}
