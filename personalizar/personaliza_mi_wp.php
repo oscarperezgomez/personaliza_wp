@@ -76,39 +76,14 @@ Author URI: https://wpcolladovillalba.org/
 	}
 	add_action('admin_print_styles', 'modificar_CSS');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-
-
-
-
-
-
-
+	//Cambiar el ancho del editor Gutenberg
+	//Theme setup
+	function my_theme_setup() {
+	    add_theme_support('editor-styles');
+	    // Relative path from theme directory
+	    add_editor_style('/personalizar/assets/mi_css.css');
+	}
+	add_action( 'after_setup_theme', 'my_theme_setup' );
 
 	// Eliminar la basura de la etiqueta <head> 
 	remove_action('wp_head', 'wp_generator'); 
@@ -118,7 +93,4 @@ Author URI: https://wpcolladovillalba.org/
 	remove_action('wp_head', 'parent_post_rel_link', 10, 0); 
 	remove_action('wp_head', 'start_post_rel_link', 10, 0); 
 	remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
-
-
-*/
 ?>
